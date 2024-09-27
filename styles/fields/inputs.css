@@ -14,6 +14,7 @@ input, textarea {
     color: var(--input-placeholder);  
 }  
 textarea { 
+    margin-bottom: unset;
     height: 8.5rem;  
     resize: none;       
     display: flex;
