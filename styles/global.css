@@ -28,3 +28,10 @@
     --text-heading: #F9F9F9; 
     --text-white: #FFFFFF;
 }
+body {
+    overflow: hidden;  
+    font: var(--body-md);
+    height: 100vh; 
+    justify-content: space-around;
+    align-items: center;
+}
