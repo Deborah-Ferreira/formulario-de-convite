@@ -1,0 +1,107 @@
+input, textarea { 
+    width: 100%;    
+    border-radius: .5rem; 
+    border: 1px solid var(--input-stroke); 
+    font: var(--body-md);
+    color: var(--text-heading); 
+    background-color: var(--input-base);   
+    height: 3rem;
+    padding: 1rem;  
+    margin-block: .75rem 1rem;  
+}    
+[type="text"]::placeholder, [type="datetime-local"], textarea::placeholder {  
+    font: var(--body-md); 
+    color: var(--input-placeholder);  
+}  
+textarea { 
+    height: 8.5rem;  
+    resize: none;       
+    display: flex;
+}  
+label { 
+    font: var(--body-sm);
+    color: var(--text-body);  
+    display: block;      
+    margin-top: .75rem; 
+}   
+input:focus, textarea:focus  {
+    outline: 1px solid var(--brand-light); 
+    border: 1px solid var(--input-stroke);    
+}    
+[type="datetime-local"] {  
+    position: relative;
+    text-transform: uppercase; 
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;    
+        position: absolute; 
+        width: 100%; 
+        height: 100%; 
+    }
+    & input:focus { 
+        outline: 1px solid var(--brand-light); 
+        border: 1px solid var(--input-stroke);    
+    }
+}   
+.input-group_input, .input-group_error {  
+    --left: 0;
+    left: var(--left); 
+}
+.input-group_error {       
+    position: relative; 
+    gap: .5rem;  
+    display: none;
+    & small { 
+        color: var(--danger);   
+        font-size: var(--body-xs); 
+    }      
+}  
+.input-group_input:not(:focus):invalid {
+    border: 1px solid var(--danger);
+    animation: error-shake 600ms; 
+}  
+@keyframes error-shake {
+    0% {
+        --left: -.62rem;
+    }
+    20% {
+        --left: .5rem;
+    }
+    40% {
+        --left: -.37rem;
+    }
+    60% {
+        --left: .25rem;
+    }
+    80% {
+        --left: -2px;
+    }
+    100% {
+        --left: 0;
+    }
+} 
+.input-group_input:not(:focus):invalid ~ .input-group_error {  
+    display: flex;
+    animation: error-shake 600ms;    
+} 
+.input-group_input:not(:focus):invalid ~ .input-group_required {  
+    display: none;
+    animation: error-shake 600ms;  
+}   
+.input-group_input:not(:focus):invalid ~ textarea {  
+    display: none;
+    animation: error-shake 600ms;  
+}   
+.input-required  {   
+    border: 1px solid var(--danger);  
+} 
+.input-wrapper {
+    position: relative;
+}
+.input-group_required {     
+    display: flex;    
+    gap: .5rem;      
+    & small {     
+        color: var(--danger);   
+        font-size: var(--body-xs);   
+    }        
+} 

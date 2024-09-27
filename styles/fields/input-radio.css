@@ -1,0 +1,58 @@
+.radio-wrapper {
+    border: 1px solid var(--input-stroke);  
+    height: 3.06rem;  
+    width: 17.06rem;
+    margin-block: .75rem 1rem; 
+    display: flex;    
+    border-radius: .5rem;   
+    justify-content: center; 
+    align-items: center; 
+}
+.radio-inner {        
+    display: flex;   
+    gap: .25rem;     
+    & .input-radio {  
+        font: var(--body-sm); 
+        & p { 
+            color: var(--text-heading);  
+            } 
+        & label {     
+            display: flex; 
+            justify-content: center;
+            align-items: center; 
+            gap: .5rem; 
+            width: 8.12rem;  
+            height: 2.56rem; 
+            margin-block: .25rem; 
+        }   
+        & .icone-online {  
+            background: url(../../assets/icons/video.svg) no-repeat center;  
+            width: 1rem;
+            height: 1rem;    
+        }     
+        & .icone-presencial { 
+            background: url(../../assets/icons/building-2.svg) no-repeat center; 
+            width: 1rem;
+            height: 1rem;       
+        } 
+    }   
+    & [type="radio"] {     
+        position: absolute; 
+        outline: none;
+        margin: unset;   
+        width: 1.25rem;  
+        opacity: 0;
+    }
+    & .input-radio [type="radio"]:checked + label {  
+        background-color: var(--shape-hover);
+        border-radius: .25rem;     
+        font-weight: 600;  
+        transition: background-color .2s;
+        & .icone-presencial { 
+            background-image: url(../../assets/icons/building-hover-.svg);  
+        }  
+        & .icone-online  {   
+            background-image: url(../../assets/icons/video-hover.svg);    
+        } 
+    } 
+}
