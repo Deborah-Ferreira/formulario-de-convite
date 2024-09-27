@@ -1,0 +1,28 @@
+fieldset {   
+    border: none; 
+    gap: 1rem; 
+    max-width: 35rem;  
+} 
+legend {   
+    display: flex;  
+    height: 1.5rem;  
+    margin-bottom: .75rem;
+    & h2 {   
+        margin-left: .75rem;   
+        line-height: 1.2rem;  
+        font: var(--heading-sm); 
+        color: var(--text-heading);  
+        display: flex;
+        align-items: center;  
+    }     
+    & .icon {  
+        width: 1.5rem;
+        height: 1.5rem;    
+        display: flex;
+        align-items: center;  
+    }  
+}   
+.event-about {
+    width: 35rem;
+    margin-block: 1.75rem; 
+}
