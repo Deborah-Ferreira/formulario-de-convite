@@ -1,0 +1,68 @@
+.switch-wrapper {   
+    height: 4.93rem;   
+    & p {
+        color: var(--text-body);
+        font: var(--body-sm); 
+    } 
+    & .switch {  
+        display: flex; 
+        margin-block: auto;   
+        & .switchToggle {    
+            width: 11rem; 
+            height: 3rem; 
+            position: relative;   
+            display: flex;    
+            align-items: center; 
+            & [type="checkbox"] {  
+                all: unset;  
+                height: 100%;  
+                display: flex;      
+            }   
+            & .modo { 
+                pointer-events: none; 
+                font: var(--body-sm);  
+                position: absolute;
+                margin-inline: 4.75rem;    
+            }
+            & .modo:before { 
+                pointer-events: none;
+                width: 2.75rem; 
+                position: absolute;    
+            }
+            & .slider {    
+                all: unset;  
+                border: 1px solid var(--input-stroke); 
+                background-color:  var(--input-base); 
+                border-radius: 62.43rem; 
+                width: 4rem;    
+                height: 2rem;     
+                position: absolute;
+                left: 0;  
+                display: flex;   
+                align-items: center; 
+            }
+            & .slider:before {   
+                background-color: var(--input-stroke);
+                border-radius: 62.43rem;
+                width: 1.5rem; 
+                height: 1.5rem; 
+                content: "";
+                position: absolute;    
+                left: .25rem;  
+            }
+            &:has(:checked) .slider:before  {
+                transform: translateX(2rem); 
+                background-color: var(--text-heading);  
+                transition: .6s;
+            }
+            &:has(:checked) .slider {
+                background-color: var(--brand-light); 
+            }
+            &:has(:checked) .slider + .modo:before{
+                background-color: var(--shape-body); 
+                color: var(--text-heading); 
+                content: "Claro";   
+            }       
+        }
+    } 
+} 

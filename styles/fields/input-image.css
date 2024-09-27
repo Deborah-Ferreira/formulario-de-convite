@@ -1,9 +1,9 @@
-.themeSelection {    
-    margin-top: 1.75rem;
+.themeSelection {      
+    margin-block: 1.75rem;
 }
-.theme-wrapper {     
+.theme-wrapper {      
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(7.87rem, 1fr));  
+    grid-template-columns: repeat(auto-fit, minmax(7.87rem, 1fr)); 
 }  
 label + .theme-wrapper { 
     margin-top: 1rem;

@@ -1,4 +1,5 @@
 @import url(inputs.css); 
 @import url(input-radio.css);  
 @import url(input-color.css);  
-@import url(input-image.css); 
+@import url(input-image.css);  
+@import url(input-checkbox.css); 
