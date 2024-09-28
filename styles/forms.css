@@ -37,3 +37,40 @@ legend {
     width: 35rem;   
     margin-block: 3rem; 
 } 
+footer { 
+    border-top: 1px solid var(--input-stroke);  
+    width: 35rem; 
+    & .terms-wrapper {  
+        margin-block: 2.5rem 3rem;  
+        & .checkbox-wrapper {    
+            height: 1.75rem;
+            display: flex; 
+            align-items: center;   
+            gap: .75rem;   
+            & [type="checkbox"] {  
+                opacity: 0;
+                height: 1.25rem;
+                width: 1.25rem; 
+                position: absolute;    
+            }  
+            & .checkbox-image { 
+                width: 1.25rem;
+                height: 1.25rem;
+                background: url(../assets/icons/checkbox.svg) no-repeat;   
+            } 
+            &:has(:checked) .checkbox-image {
+                background: url(../assets/icons/checkbox-checked.svg); 
+            } 
+            & label {    
+                font: var(--body-sm);
+                color: var(--text-body);
+                display: flex;
+                align-content: center;
+                margin-block: 2px;
+                & strong {
+                    color: var(--brand-light)
+                }
+            } 
+        }
+    }
+}
