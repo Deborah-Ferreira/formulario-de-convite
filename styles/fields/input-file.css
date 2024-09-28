@@ -1,0 +1,54 @@
+.input-inner {    
+    height: 4.93rem;
+    & p { 
+        color: var(--text-body);
+        font: var(--body-sm);
+    }
+    & .upload-button {     
+        color: var(--input-placeholder); 
+        margin-top: .75rem;
+        position: relative; 
+        display: flex;    
+        height: 3rem;  
+        & [type="file"] {    
+            all: unset;  
+            background-color: var(--shape-body); 
+            font: var(--body-sm);
+            border: none;   
+            width: 23rem;    
+            padding-top: .75rem; 
+        } 
+        & [type="file"]::file-selector-button {    
+            opacity: 0;          
+            margin-left: .75rem;  
+        }  
+    }
+    & .custom-button {      
+        background-color: var(--shape-button);  
+        border-radius: .5rem;
+        width: 7.43rem; 
+        height: 2.5rem; 
+        position: absolute;  
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        margin-block: 2px;      
+        & p {  
+            font: var(--body-sm);   
+            color: var(--text-heading);  
+            margin-left: .5rem;  
+        } 
+    }
+    & .custom-button-upload {   
+        background: url(../../assets/icons/upload.svg) no-repeat center/1rem;  
+        width: 1rem;
+        height: 1rem;    
+    } 
+    & .custom-button:hover { 
+        background-color: var(--shape-hover); 
+        transition: background-color .2s;  
+        & .custom-button-upload  {
+            background-image: url(../../assets/icons/upload-hover.svg);  
+        }
+    } 
+}

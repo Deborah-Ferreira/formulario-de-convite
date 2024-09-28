@@ -185,19 +185,41 @@
                                 </div>
                             </div> 
                         </div>  
-                        <div class="switch-wrapper flex-3"> 
-                            <p>Estilo</p>    
-                            <div class="switch">
-                                <label class="switchToggle">    
-                                    <input type="checkbox">  
-                                    <span class="slider"></span>  
-                                    <span class="modo">Escuro</span> 
-                                </label>   
+                        <div class="flex">
+                            <div class="switch-wrapper flex-3"> 
+                                <p>Estilo</p>    
+                                <div class="switch">
+                                    <label class="switchToggle">    
+                                        <input type="checkbox">  
+                                        <span class="slider"></span>  
+                                        <span class="modo">Escuro</span> 
+                                    </label>   
+                                </div>
+                            </div>
+                            <div class="wrapper flex-3">
+                                <div class="input-inner">
+                                    <p>Foto de capa</p>
+                                    <div class="file-upload">  
+                                        <div class="upload-button">
+                                            <div class="input-group">
+                                                <input class="input-group_input" type="file" id="file" class="file-input" accept="image/*">   
+                                                <div class="input-group_error"> 
+                                                    <img src="./assets/icons/circle-alert.svg" alt="ícone de alerta vermelho">   
+                                                    <small> 
+                                                        error message  
+                                                    </small> 
+                                                </div> 
+                                            </div> 
+                                        <label type="button" class="custom-button" for="file">   
+                                            <div class="custom-button-upload"></div>
+                                            <p>Selecionar</p>  
+                                        </label>   
+                                    </div>   
+                                </div>   
                             </div>
                         </div>
                     </fieldset> 
-                </section>
-                
+                </section> 
             </form>
         </main> 
     </div>    
