@@ -31,3 +31,9 @@ legend {
     width: 35rem; 
     margin-block: 3rem;  
 }
+.contact {   
+    display: flex;
+    flex-direction: column;   
+    width: 35rem;   
+    margin-block: 3rem; 
+} 
