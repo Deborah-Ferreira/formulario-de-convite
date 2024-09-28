@@ -1,0 +1,40 @@
+.actions-wrapper {   
+    display: flex;
+    flex-direction: row-reverse; 
+    & button { 
+        all: unset;  
+        padding: .81rem;
+        border-radius: .5rem;
+        cursor: pointer; 
+        width: 11.06rem;  
+        background-color: var(--brand-dark);  
+        position: relative; 
+        & .btn-text { 
+            all: unset;    
+            font-weight: 600;  
+            color: var(--text-heading);
+            display: flex; 
+            justify-content: center;   
+        }  
+        & .ticket {  
+            width: 1.25rem;
+            height: 1.25rem;
+            position: absolute;
+            background: url(../../assets/icons/ticket.svg) no-repeat center; 
+            left: 1.25rem;
+            top: .87rem;
+        }
+        & .upload { 
+            width: 1.25rem;
+            height: 1.25rem;
+            position: absolute;
+            background: url(../../assets/icons/upload.svg) no-repeat center; 
+            right: 1.25rem;
+            top: .87rem;
+        }
+    }
+    & button:hover {
+        background-color: var(--brand-light);   
+        transition: background-color .2s; 
+    }   
+} 
