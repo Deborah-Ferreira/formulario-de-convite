@@ -1,23 +1,22 @@
-.themeSelection {      
+.themeSelection { 
     margin-block: 1.75rem;
 }
-.theme-wrapper {      
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(7.87rem, 1fr)); 
+.theme-wrapper {        
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
 }  
-label + .theme-wrapper { 
+label + .theme-wrapper {  
     margin-top: 1rem;
 } 
-.theme-wrapper {    
+.theme-wrapper {      
     gap: .5rem;
 } 
-.theme-inner {    
+.theme-inner {      
     background-color: var(--shape-button); 
     border-radius: .25rem;
     display: flex; 
     flex-direction: column; 
-    padding: .25rem; 
-    height: 6.43rem;
+    padding: .25rem;    
     position: relative;   
     & [type="radio"] {
         position: absolute;
@@ -32,9 +31,10 @@ label + .theme-wrapper {
         position: absolute;
         inset: 0; 
     }  
-    & label { 
-        margin: unset;  
-        margin: auto;
+    & label {  
+        margin: unset;   
+        text-align: center;
+        margin: .5rem;
     } 
     &:hover {  
         background-color: var(--shape-hover);

@@ -39,7 +39,7 @@
                 position: absolute;
                 left: 0;  
                 display: flex;   
-                align-items: center; 
+                align-items: center;   
             }
             & .slider:before {   
                 background-color: var(--input-stroke);
@@ -49,14 +49,15 @@
                 content: "";
                 position: absolute;    
                 left: .25rem;  
+                transition: .6s;  
             }
             &:has(:checked) .slider:before  {
-                transform: translateX(2rem); 
                 background-color: var(--text-heading);  
-                transition: .6s;
-            }
+                transition: .6s; 
+                transform: translateX(2rem); 
+            } 
             &:has(:checked) .slider {
-                background-color: var(--brand-light); 
+                background-color: var(--brand-light);  
             }
             &:has(:checked) .slider + .modo:before{
                 background-color: var(--shape-body); 

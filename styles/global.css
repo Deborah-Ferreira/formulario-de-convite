@@ -30,10 +30,7 @@
 }
 body {
     overflow: hidden;  
-    font: var(--body-md);
-    height: 100vh; 
-    justify-content: space-around;
-    align-items: center;
+    font: var(--body-md);  
 } 
 .flex {
     display: flex;  

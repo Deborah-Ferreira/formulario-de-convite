@@ -1,8 +1,7 @@
-.color-picker {   
-    width: 35rem;
+.color-picker {    
     height: 2.62rem;
-    display: flex;    
-    gap: .75rem;  
+    display: flex;     
+     justify-content: space-between; 
     & input {      
         all: unset;  
         background-color: var(--shape-button);

@@ -1,8 +1,7 @@
 @import url(fields/index.css); 
 fieldset {   
     border: none; 
-    gap: 1rem; 
-    max-width: 35rem;  
+    gap: 1rem;     
 } 
 legend {   
     display: flex;  
@@ -23,23 +22,19 @@ legend {
         align-items: center;  
     }  
 }   
-.event-about {
-    width: 35rem;
+.event-about { 
     margin-block: 1.75rem; 
 }
-.customization { 
-    width: 35rem; 
+.customization {  
     margin-block: 3rem;  
 }
 .contact {   
     display: flex;
     flex-direction: column;   
-    width: 35rem;   
     margin-block: 3rem; 
 } 
 footer { 
-    border-top: 1px solid var(--input-stroke);  
-    width: 35rem; 
+    border-top: 1px solid var(--input-stroke);   
     & .terms-wrapper {  
         margin-block: 2.5rem 3rem;  
         & .checkbox-wrapper {    
@@ -66,11 +61,11 @@ footer {
                 color: var(--text-body);
                 display: flex;
                 align-content: center;
-                margin-block: 2px;
+                margin-block: .125rem;
                 & strong {
                     color: var(--brand-light)
                 }
             } 
         }
     }
-}
+}  
